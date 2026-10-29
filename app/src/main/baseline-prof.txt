@@ -1,0 +1,12 @@
+# Hand-written baseline profile: tells Android to pre-compile the code that runs at startup and
+# while scrolling, so the first launch of a release build is not slow. A profile generated on a
+# device with a Macrobenchmark test is more precise; this one already covers the hot paths.
+Lcom/hcrdevelopers/spotshield/**;
+HSPLcom/hcrdevelopers/spotshield/**;->**(**)**
+HSPLandroidx/compose/runtime/**;->**(**)**
+HSPLandroidx/compose/ui/**;->**(**)**
+HSPLandroidx/compose/foundation/**;->**(**)**
+HSPLandroidx/compose/animation/**;->**(**)**
+HSPLandroidx/compose/material3/**;->**(**)**
+HSPLandroidx/activity/compose/**;->**(**)**
+HSPLandroidx/lifecycle/**;->**(**)**
